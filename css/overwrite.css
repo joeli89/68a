@@ -1,0 +1,35 @@
+.navbar {
+	background: #81818E;
+}
+.navbar-collapse  {
+	background: #81818E;
+}
+
+.header-logo img{
+	max-width: 14%;
+}
+
+.heading h2 {
+	font-family: 'Dancing Script', cursive;
+	text-transform: none;
+}
+.heading img {
+	width: 150px;
+}
+
+.hero {
+	background-image: url(../img/slider/kitchen1.jpg);
+}
+
+
+/*PROJECT 1*/
+
+.hero1 {
+	width: 100%;
+	color: #fff;
+	background-image: url(../img/slider/project2.jpg);
+	margin: 0;
+	display: table;
+	height: 100%;
+}
+
