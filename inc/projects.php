@@ -1,34 +1,68 @@
 <?php 
 
 	$projects = array();
+
 		$projects[1] = array(
 			"name" => "Project 1",
+			"location" => "Surrey",
 			"link" => "project.php",
 			"main-image" => "img/projects/thumbs/branding1.jpg",
-			"headImage" => "hero1",
+			"headImage" => "bg_project1",
 			"category" => "Kitchen",
-			"images" => array("img/projects/thumbs/branding1.jpg", "img/projects/thumbs/web1.jpg", "img/projects/thumbs/web2.jpg")
+			"description" => "1) A nice kitchen with lot of lighting. Very nice.",
+			"images" => array(
+				"img/projects/print3.jpg", 
+				"img/projects/print3.jpg", 
+				"img/projects/print3.jpg", 
+				"img/projects/print3.jpg", 
+				"img/projects/print3.jpg", 
+				"img/projects/print3.jpg", 
+				"img/projects/print3.jpg")
 			);
+
+
+
 		$projects[2] = array(
-			"name" => "Project 1",
+			"name" => "Project 2",
+			"location" => "Kent",
 			"link" => "projects/project-2.html",
 			"main-image" => "img/projects/thumbs/branding2.jpg",
+			"headImage" => "bg_project2",
 			"category" => "Bedroom",
-			"images" => array("img/projects/thumbs/branding1.jpg", "img/projects/thumbs/web1.jpg", "img/projects/thumbs/web2.jpg")
+			"description" => "2) A nice kitchen with lot of lighting. Very nice.",
+			"images" => array("img/projects/thumbs/print3.jpg", "img/projects/thumbs/web2.jpg", "img/projects/thumbs/web3.jpg")
 			);
 		$projects[3] = array(
-			"name" => "Project 1",
+			"name" => "Project 3",
+			"location" => "Cornwall",
 			"link" => "projects/project-3.html",
 			"main-image" => "img/projects/thumbs/branding3.jpg",
+			"headImage" => "bg_project3",
 			"category" => "Office",
-			"images" => array("img/projects/thumbs/branding1.jpg", "img/projects/thumbs/web1.jpg", "img/projects/thumbs/web2.jpg")
+			"description" => "3) A nice kitchen with lot of lighting. Very nice.",
+			"images" => array("img/projects/thumbs/branding2.jpg", "img/projects/thumbs/web3.jpg", "img/projects/thumbs/print1.jpg")
 			);
 		$projects[4] = array(
 			"name" => "Project 4",
+			"location" => "Oxford",
 			"link" => "projects/project-4.html",
 			"main-image" => "img/projects/thumbs/print1.jpg",
+			"headImage" => "bg_project4",
 			"category" => "Kitchen",
-			"images" => array("img/projects/thumbs/branding1.jpg", "img/projects/thumbs/web1.jpg", "img/projects/thumbs/web2.jpg")
+			"description" => "4) A nice kitchen with lot of lighting. Very nice.",
+			"images" => array("img/projects/thumbs/web2.jpg", "img/projects/thumbs/web3.jpg", "img/projects/thumbs/branding1.jpg")
 			);
+		$projects[5] = array(
+			"name" => "Project Char",
+			"location" => "Exeter",
+			"link" => "projects/project-2.html",
+			"main-image" => "img/projects/thumbs/print1.jpg",
+			"headImage" => "bg_project5",
+			"category" => "Kitchen",
+			"description" => "5) A nice kitchen with lot of lighting. Very nice.",
+			"images" => array("img/projects/thumbs/web1.jpg", "img/projects/thumbs/print2.jpg", "img/projects/thumbs/print3.jpg")
+			);
+
+
 
 ?>

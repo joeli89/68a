@@ -1,30 +1,32 @@
 <?php include("inc/projects.php"); 
 
 if(isset($_GET["id"])) {
-	$project_id = $GET["id"];
-	if(isset($projects["$project_id"])) {
-		$product = $projects["$project_id"];
-	}
-}
-if(!isset($product)) {
+	$product_id = $_GET["id"];
+	if(isset($projects[$product_id])) {
+		$product = $projects["$product_id"];
+
+	} 
+} if(!isset ($product)) {
 	header("Location: index.php");
-	ecit();
+	exit();
 }
 
 
-$pageTitle = $project["name"];
+
+$pageTitle = $product["name"];
 include("inc/header.php");
 include("inc/project-nav.php"); 
 ?>
 
+
 	<!-- Begin Hero -->
-	<div class="jumbotron hero1 clearfix" data-top-bottom="background-position: 50% -200px;" data-bottom-top="background-position: 50% 100px;" data-anchor-target=".ticker h1">
+	<div class='jumbotron <?php echo $product["headImage"]; ?> clearfix' data-top-bottom="background-position: 50% -200px;" data-bottom-top="background-position: 50% 100px;" data-anchor-target=".ticker h1">
 
 		<!-- Content -->
 		<div class="container center-vertically heading">
-			<img src="img/logo/logo1.png">
-			<div>
-				<h2>Project 1</h2>
+			<div class="ticker">
+				<h1><?php echo $product["name"]; ?></h1>
+				
 			</div>
 			<hr>
 			<a href="#" data-id="section2" class="btn btn-default bolt-button-light scroll-link" style="margin-top:10px;">
@@ -42,12 +44,13 @@ include("inc/project-nav.php");
 
 			<div class="container">
 
-				<!-- Content -->
+				
 				<div class="row">
 					<div class="col-lg-10 col-lg-offset-1" >
-						<h3 data-scroll-reveal="enter left and move 50px over 1.2s">Project 1</h3>
+						<h3 data-scroll-reveal="enter left and move 50px over 1.2s"><?php echo $product["name"]; ?></h3>
+						<p><?php echo $product["location"]; ?></p>
 						<hr data-scroll-reveal>
-						<p data-scroll-reveal>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a elit turpis. Phasellus non varius mi. Nam bibendum mauris at sollicitudin lacinia. Vestibulum blandit nibh neque, id consequat mi vestibulum eu. Suspendisse potenti. Ut ac consequat nulla. Praesent tristique eleifend tincidunt.</p>
+						<p data-scroll-reveal><?php echo $product["description"]; ?></p>
 					</div>
 				</div>
 
@@ -65,28 +68,26 @@ include("inc/project-nav.php");
 
 		<div class="container portfolio">
 
-			<!-- Page Title -->
+			
 			<div class="row page-title-2">
 				<div class="col-lg-12">
-					<h3>Project 1</h3>
+					<h3>Gallery</h3>
 					<hr>
-					<p><?php echo $location; ?></p>
 				</div>
 			</div>
 
-			<!-- Portfolio Items -->
+			
 			<div class="container port-holder">
 			  <ul id="myPortfolio" class="no-padding">
 
-			  	<?php foreach($images as $image) { ; ?>
+			  	<?php foreach($product["images"] as $image) { ; ?>
 
 				    <li class="item col-xs-4 no-padding">
-				    	<a href='<?php echo $image["link"]; ?>'>
-							<img src='<?php echo $image["img"]; ?>' alt='<?php echo $image["name"]; ?>' />
+				    	<a data-toggle="modal" href='<?php echo $image; ?>' data-target="#myModal">
+							<img src='<?php echo $image; ?>' alt='' />
 							<span class="portfolio-hover">
 							  <span>
-							  	<span class="portfolio-title"><?php echo $image["name"]; ?></span><br>
-							  	<span class="portfolio-category"><?php echo $image["location"]; ?></span>
+							  	<span class="portfolio-title"><i class="ion-plus-circled"></i></span><br>
 							  </span>
 							</span>
 						</a>
@@ -99,8 +100,29 @@ include("inc/project-nav.php");
 
 		</div>
 
-	</section>
+	</section> 
 	<!-- End Portfolio -->
+
+	<!-- Modal -->
+	<div class="modal fade" id="myModal" role="dialog" aria-hidden="true">
+	    <div class="modal-dialog">
+	        <div class="modal-content">
+	            <div class="modal-body"></div>
+	        </div> <!-- /.modal-content -->
+	    </div> <!-- /.modal-dialog -->
+	</div> <!-- /.modal -->
+<!-- 
+				<li class="item web illustrations col-xs-4 no-padding">
+			    	<a data-toggle="modal" href="projects/project-9.html" data-target="#myModal">
+						<img src="img/projects/thumbs/web3.jpg" alt="..." />
+						<span class="portfolio-hover">
+						  <span>
+						  	<span class="portfolio-title">Eary</span><br>
+						  	<span class="portfolio-category">Web + Illustrations</span>
+						  </span>
+						</span>
+					</a>
+			    </li> -->
 
 
 

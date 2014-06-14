@@ -34,6 +34,7 @@
 	<script type="text/javascript" src='js/skrollr.min.js'></script>
 	<script type="text/javascript" src='js/start-skrollr.js'></script>	
 	<script type="text/javascript" src='js/scrollReveal.js'></script>
+	<script src="js/jquery.magnific-popup.min.js"></script> 
 	<script type="text/javascript">
 		window.scrollReveal = new scrollReveal();
 		//activate scrollReveal.js
