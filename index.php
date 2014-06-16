@@ -10,9 +10,8 @@ include("inc/index-nav.php"); ?>
 		<!-- Content -->
 		<div class="container center-vertically heading">
 			<img src="img/logo/logo1.png">
-			<div class="ticker">
-				<h1>Beautifully Functional</h1>
-				
+			<div>
+				<h2>Beautifully Functional</h2>
 			</div>
 			<hr>
 			<a href="#" data-id="section2" class="btn btn-default bolt-button-light scroll-link" style="margin-top:10px;">
@@ -77,10 +76,10 @@ include("inc/index-nav.php"); ?>
 			<div class="container port-holder">
 			  <ul id="myPortfolio" class="no-padding">
 
-			  	<?php foreach($projects as $project_id =>  $project) {; ?>
+			  	<?php foreach($projects as $id =>  $project) {; ?>
 
 				    <li class='item col-xs-4 no-padding <?php echo $project["category"]; ?>'>
-				    	<a href="project.php?id=<?php echo $project_id; ?>" >
+				    	<a href='<?php echo $project["link"]; ?>' >
 							<img src='<?php echo $project["main-image"]; ?>' alt='<?php echo $project["name"]; ?>' />
 							<span class="portfolio-hover">
 							  <span>
@@ -93,7 +92,7 @@ include("inc/index-nav.php"); ?>
 
 			    <?php } ?>
 
-
+			    
 <!-- 			  	<?php foreach($projects as $project_id => $project) {
 
 				    echo '<li class="item col-xs-4 no-padding' . $project["category"] . '" >';

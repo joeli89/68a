@@ -7,7 +7,7 @@
 
 				<!-- Brand -->
 				<a href="index.php" class="navbar-brand">
-					<div class="breadcrumb"><a href="index.php">Home</a> <i class="ion-chevron-right"></i> <?php echo $product["name"]; ?> </div>
+					<span class="header-logo"><img src="img/logo/logo1.png"></span>
 				</a>
 
 				<!-- Mobile Navigation -->

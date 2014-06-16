@@ -15,7 +15,6 @@
 	<!-- Stylesheets -->
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
-	<link rel="stylesheet" href="css/magnific-popup.css"> 
 	<link href="css/overwrite.css" rel="stylesheet">
 
 	<!-- Fonts -->
@@ -30,7 +29,7 @@
 	<script type="text/javascript" src="js/royal_preloader.min.js"></script>
 	<script type="text/javascript">
 
-		// image paths
+		// Change to your image paths
 	    var images = {
 	    	'slide1':     		'http://aliensix.com/boltdemo/navbar-top/img/slider/slide1.jpg',
 	    	'team-member1':     'http://aliensix.com/boltdemo/navbar-top/img/team-member-1.jpg',

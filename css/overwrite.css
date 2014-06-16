@@ -9,70 +9,27 @@
 	max-width: 14%;
 }
 
-.heading h1 {
+.heading h2 {
 	font-family: 'Dancing Script', cursive;
 	text-transform: none;
-	color: #81818E;
-	text-shadow: 1px 1px 0px #000000;
 }
 .heading img {
 	width: 150px;
 }
 
-.breadcrumb {
-	background-color: transparent;
-	font-weight: 100;
+.hero {
+	background-image: url(../img/slider/kitchen1.jpg);
 }
 
-.bg_project1 {
-	background-image: url(../img/slider/project1.jpg);
+
+/*PROJECT 1*/
+
+.hero1 {
 	width: 100%;
 	color: #fff;
-	margin: 0;
-	display: table;
-	height: 100%;
-}
-
-.bg_project2 {
 	background-image: url(../img/slider/project2.jpg);
-	width: 100%;
-	color: #fff;
 	margin: 0;
 	display: table;
 	height: 100%;
 }
-
-.bg_project3 {
-	background-image: url(../img/slider/project3.jpg);
-	width: 100%;
-	color: #fff;
-	margin: 0;
-	display: table;
-	height: 100%;
-}
-
-.bg_project4 {
-	background-image: url(../img/slider/project4.jpg);
-	width: 100%;
-	color: #fff;
-	margin: 0;
-	display: table;
-	height: 100%;
-}
-
-.bg_project5 {
-	background-image: url(../img/slider/project5.jpg);
-	width: 100%;
-	color: #fff;
-	margin: 0;
-	display: table;
-	height: 100%;
-}
-
-.portfolio-title {
-	font: 80px;
-}
-
-
-
 
